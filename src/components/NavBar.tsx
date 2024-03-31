@@ -7,7 +7,7 @@ const NavBar = () => {
     <HStack justifyContent={'space-between'} padding={'10px'}>
       <HStack spacing={4}>
         <Image src={logo} boxSize="60px" />
-        <Text fontSize={'2xl'} fontWeight={'extrabold'} color={'brand.primary'}>
+        <Text fontSize={'xl'} fontWeight={'extrabold'} color={'brand.primary'}>
           PlayTopia
         </Text>
       </HStack>
