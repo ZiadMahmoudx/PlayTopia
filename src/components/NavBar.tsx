@@ -1,13 +1,13 @@
 import { HStack, Image, Text } from '@chakra-ui/react';
-import logo from '../assets/logo.webp';
+import logo from '../assets/logo2.png';
 import ColorModeSwitch from './ColorModeSwitch';
 
 const NavBar = () => {
   return (
     <HStack justifyContent={'space-between'} padding={'10px'}>
-      <HStack>
+      <HStack spacing={4}>
         <Image src={logo} boxSize="60px" />
-        <Text fontSize={'larger'} fontWeight={'bold'}>
+        <Text fontSize={'2xl'} fontWeight={'extrabold'} color={'brand.primary'}>
           PlayTopia
         </Text>
       </HStack>
