@@ -9,7 +9,7 @@ const SearchInput = ({ onSearch }: Props) => {
   const ref = useRef<HTMLInputElement>(null);
   return (
     <form
-      style={{ width: '400px', margin: '3px 0px' }}
+      style={{ width: '100%' }}
       onSubmit={(event) => {
         event.preventDefault();
         if (ref.current) onSearch(ref.current.value);
@@ -17,9 +17,9 @@ const SearchInput = ({ onSearch }: Props) => {
     >
       <InputGroup>
         {' '}
-        {/* Adjusted width */}
         <InputLeftElement pointerEvents="none" children={<BsSearch />} />
         <Input
+          width={'100%'}
           ref={ref}
           borderRadius={20}
           placeholder="Search Games..."
